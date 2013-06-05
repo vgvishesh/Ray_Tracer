@@ -11,7 +11,7 @@ for different versions of ray tracer refer to "Versions.txt",
 for help regarding how to write scene files refer to SDL.txt
 
 
-to compile and run the code fr a articular version of ray tracer,
+to compile and run the code for a particular version of ray tracer,
   - pick any of the ver.h file from 6 different version
   - choose the ray.cpp file for the corresponding version
   - choose the corresponding scene.txt file 
