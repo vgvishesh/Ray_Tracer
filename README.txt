@@ -8,7 +8,7 @@ Scene.txt are the scene files, which are used to set up camera, objects and ligh
 the scene.
 
 for different versions of ray tracer refer to "Versions.txt",
-for help regarding how to write scene files refer to SDL.txt
+for help regarding how to write scene files refer to "SDL.txt"
 
 
 to compile and run the code for a particular version of ray tracer,
