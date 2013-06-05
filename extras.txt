@@ -1,0 +1,5 @@
+things to keep in mind
+1. bump mapping
+2. texture mapping
+3. aliasing and anti-alisaing
+4. shadows

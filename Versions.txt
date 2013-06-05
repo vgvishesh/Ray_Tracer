@@ -1,0 +1,34 @@
+Version 1 
+	deals with simple ray traing with no generalities and eye is fixed on Z axis and can be moved only on Z axis
+	1. ver1.h
+	2. ray1.cpp
+
+Version 2
+	this version adds the generality to the positioning on eye at any point in 3D space by using 
+	a mapping between local coordinate axis of eye (n,u,v) and global (x,y,z) coordinates...
+	1. ver2.h
+	2. ray2.cpp
+	
+version 3
+	this version adds the the ability to trace multiple objects (spheres) in the scene....
+	1. ver3.h
+	2. ray3.cpp
+	
+version 4
+	this version includes the phong model for lighting  + the material color properties + multiple light sources...
+	1. ver4.h
+	2. ray4.cpp
+	
+version 5
+	things to be included in this version:
+	coordinate axes corrected
+	1. planer object 
+	2. make interfaces of already existing class / eliminate the need of friend classes
+	files-
+	1.ver5.h
+	2.ray5.cpp
+	
+version 6
+	updates from previous version:
+	1. corrected shading model (phong)
+	2. secondary ray tracing (shadow, reflection, refraction)

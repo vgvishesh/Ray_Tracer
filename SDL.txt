@@ -1,0 +1,42 @@
+Following SDL is used for-
+	1. Setting the paralleopiped view volume of the camera
+	2. setting the camera in the scene
+	3. specifying the no. of light sources
+	4. setting individual point light sources having following properties-
+		4.1 position (x,y,z)
+		4.2 ambient light intensity (red, green, blue)
+		4.3 diffuse light intensity (red, green, blue)
+		4.4 specular light intensity(red, green, blue)
+	5. specifying the no. of spherical objects
+	6. setting up the following properties of each sphere individually-
+		6.1 position (x,y,z)
+		6.2 radius
+		6.3 emmisive color (red, green, blue)
+		6.4 ambient light reflection coefficient (red, green, blue)
+		6.5 diffuse light reflection coefficient (red, green, blue)
+		6.6 specular light reflection coefficient(red, green, blue)
+		6.7 Phong exponent
+	7. specifying the no. of planes in the scene
+	8. setting up the following properties of the palnes-
+		8.1 normal vector to the plane (x,y,z)
+		8.2 any point in the plane (x,y,z)		// to get the plane equation
+		8.3 ambient light reflection coefficient (red, green, blue)
+		8.4 diffuse light reflection coefficient (red, green, blue)
+		8.5 specular light reflection coefficient(red, green, blue)
+		8.6 Phong exponent
+		
+Below is a sample Scene file written in the spwcified SDL		 
+	
+
+-250,250,-250,250,2,50 	//1st line tells the dimentions of paralleopiped view volume of camera; left,right,bootom, top, near , far plane
+0,100,100,0,0,0,0,1,0	//2nd line tells the camera/eye position in the scene; eye.x,eye.y,eye.z,looat.x,lookat.y,lookat.z,up.x,up.y,up.z; similar to parameters in gluLookAt() in glut.
+l 3						// specify no. of light sources
+500,500,500,1,1,1,0.8,0.9,0.5,1.0,0.8,1.0 	// 3 lines for 3 light sources
+0,-500,50,1,1,1,0.8,0.9,0.5,1.0,0.8,1.0		// information in form-	
+200,300,100,1,1,1,0.8,0.9,0.5,1.0,0.8,1.0	// pos.x,pos.y,pos.z,ambient.r,amb.g,amb.r, diffuse.r,diff.g,diff.b,specular.r,spec.g,spec.b
+s 3						// specify the no. of spheres; 3 lines for 3 spheres
+0,-50,80,50,1,0,0,0.329412,0.223529,0.027451,0.780392,0.568627,0.113725,0.992157,0.941176,0.807843,27.8974
+0,30,0,80,1,1,0,0.24725,0.1995,0.0745,0.75164,0.60648,0.22648,0.628281,0.555802,0.366065,51.2
+20,20,300,60,0,1,0,0,0,0,0.01,0.01,0.01,0.50,0.50,0.50,32
+p 1
+0,1,0,0,-100,0,0,1,0,0.24725,0.1995,0.0745,0.75164,0.60648,0.22648,0.628281,0.555802,0.366065,51.2
